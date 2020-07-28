@@ -1048,3 +1048,301 @@ Processing by PostsController#checked as */*
 Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 4221)
 
 
+Started GET "/" for ::1 at 2020-07-28 16:05:36 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+SyntaxError (/Users/usudatakenori/projects/AjaxApp/app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+    render json: (post: post)
+                  ^~~~~):
+  
+app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+Started GET "/" for ::1 at 2020-07-28 16:06:33 +0900
+  
+SyntaxError (/Users/usudatakenori/projects/AjaxApp/app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+    render json: (post: post)
+                  ^~~~~):
+  
+app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+Started GET "/" for ::1 at 2020-07-28 16:06:53 +0900
+  
+SyntaxError (/Users/usudatakenori/projects/AjaxApp/app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+    render json: (post: posts)
+                  ^~~~~):
+  
+app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+app/controllers/posts_controller.rb:8: syntax error, unexpected tLABEL
+Started GET "/" for ::1 at 2020-07-28 16:07:08 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 4636)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/usudatakenori/projects/AjaxApp/public/packs
+[Webpacker] Hash: de834be6ae66101c62a4
+Version: webpack 4.43.0
+Time: 920ms
+Built at: 2020/07/28 16:07:11
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e6f4f241c1e3f621e954.js    127 KiB  application  [emitted] [immutable]  application
+js/application-e6f4f241c1e3f621e954.js.map    142 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e6f4f241c1e3f621e954.js js/application-e6f4f241c1e3f621e954.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/checked.js] 1.05 KiB {application} [built]
+[./app/javascript/memo.js] 1.15 KiB {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 2786ms (Views: 2777.1ms | ActiveRecord: 5.1ms | Allocations: 13558)
+
+
+Started GET "/posts/2" for ::1 at 2020-07-28 16:07:14 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-28 07:07:14.802153' WHERE `posts`.`id` = 2[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 4364)
+
+
+Started GET "/posts/2" for ::1 at 2020-07-28 16:07:15 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-28 07:07:15.690821' WHERE `posts`.`id` = 2[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 4223)
+
+
+Started POST "/posts" for ::1 at 2020-07-28 16:07:20 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"0SaZBwuZny38YgHEOIY1NOKutetg0gxKH77qQzzJnOvW6G4i0pTvaUBGMyg8H7odZVtaFDRm5xcyGA2k7eU1hw==", "content"=>"実は私・・・宇宙人です。"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `checked`, `created_at`, `updated_at`) VALUES ('実は私・・・宇宙人です。', FALSE, '2020-07-28 07:07:20.083213', '2020-07-28 07:07:20.083213')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 0.7ms | Allocations: 100716)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x00007fc16f3bdca0>):
+  
+app/controllers/posts_controller.rb:8:in `create'
+Started POST "/posts" for ::1 at 2020-07-28 16:25:06 +0900
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"0SaZBwuZny38YgHEOIY1NOKutetg0gxKH77qQzzJnOvW6G4i0pTvaUBGMyg8H7odZVtaFDRm5xcyGA2k7eU1hw==", "content"=>"実は私・・・宇宙人です。"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (2.1ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `checked`, `created_at`, `updated_at`) VALUES ('実は私・・・宇宙人です。', FALSE, '2020-07-28 07:25:06.537555', '2020-07-28 07:25:06.537555')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 3.3ms | Allocations: 100623)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x00007fc1700d5cf8>):
+  
+app/controllers/posts_controller.rb:8:in `create'
+Started GET "/" for ::1 at 2020-07-28 16:34:02 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1475)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/usudatakenori/projects/AjaxApp/public/packs
+[Webpacker] Hash: 8a385b949dd7658423b0
+Version: webpack 4.43.0
+Time: 859ms
+Built at: 2020/07/28 16:34:05
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-48df591275fdffc54a24.js    127 KiB  application  [emitted] [immutable]  application
+js/application-48df591275fdffc54a24.js.map    142 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-48df591275fdffc54a24.js js/application-48df591275fdffc54a24.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/checked.js] 1.05 KiB {application} [built]
+[./app/javascript/memo.js] 1.15 KiB {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 2731ms (Views: 2730.0ms | ActiveRecord: 0.2ms | Allocations: 8503)
+
+
+Started POST "/posts" for ::1 at 2020-07-28 16:34:08 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"I1aeXRwSHb665qCMCeNO97jaTQZsp6Z+NZqUSf2pAookmGl4xR9t+gbCkmANesHePy+i+TgTTSMYPHOuLIWr5g==", "content"=>"実は私・・・宇宙人です。"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `checked`, `created_at`, `updated_at`) VALUES ('実は私・・・宇宙人です。', FALSE, '2020-07-28 07:34:08.923191', '2020-07-28 07:34:08.923191')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 0.9ms | Allocations: 100635)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x00007fc168483128>):
+  
+app/controllers/posts_controller.rb:8:in `create'
+Started GET "/" for ::1 at 2020-07-28 16:34:35 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1503)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 7390)
+
+
+Started POST "/posts" for ::1 at 2020-07-28 16:34:39 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"G/tz2SluuonEHTc0b8gkq5heV3OiZBMBcMb0k/HoKyQcNYT88GPKzXg5BdhrUauCH6u4jPbQ+FxdYBN0IMSCSA==", "content"=>"tesuto"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `checked`, `created_at`, `updated_at`) VALUES ('tesuto', FALSE, '2020-07-28 07:34:39.713186', '2020-07-28 07:34:39.713186')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.6ms | Allocations: 100635)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x00007fc1700ad690>):
+  
+app/controllers/posts_controller.rb:8:in `create'
+Started GET "/" for ::1 at 2020-07-28 16:34:42 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 7422)
+
+
+Started GET "/" for ::1 at 2020-07-28 16:37:50 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 4502)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/usudatakenori/projects/AjaxApp/public/packs
+[Webpacker] Hash: 5c4ef87a3b941d030331
+Version: webpack 4.43.0
+Time: 897ms
+Built at: 2020/07/28 16:37:53
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cd6d76e99c2979e62eca.js    127 KiB  application  [emitted] [immutable]  application
+js/application-cd6d76e99c2979e62eca.js.map    142 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-cd6d76e99c2979e62eca.js js/application-cd6d76e99c2979e62eca.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/checked.js] 1.05 KiB {application} [built]
+[./app/javascript/memo.js] 1.15 KiB {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 2797ms (Views: 2789.2ms | ActiveRecord: 5.0ms | Allocations: 12674)
+
+
+Started POST "/posts" for ::1 at 2020-07-28 16:38:02 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"d0RN03k7Q/U3cRlvVngdSFs/X6HEbVPKFR3j+u+GwwBwirr2oDYzsYtVK4NS4ZJh3MqwXpDZuJc4uwQdPqpqbA==", "content"=>"修正"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `checked`, `created_at`, `updated_at`) VALUES ('修正', FALSE, '2020-07-28 07:38:02.719712', '2020-07-28 07:38:02.719712')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 2918)
+
+
+Started POST "/posts" for ::1 at 2020-07-28 16:38:07 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"d0RN03k7Q/U3cRlvVngdSFs/X6HEbVPKFR3j+u+GwwBwirr2oDYzsYtVK4NS4ZJh3MqwXpDZuJc4uwQdPqpqbA==", "content"=>"修正"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `checked`, `created_at`, `updated_at`) VALUES ('修正', FALSE, '2020-07-28 07:38:07.587472', '2020-07-28 07:38:07.587472')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 2881)
+
+
+Started GET "/" for ::1 at 2020-07-28 16:38:20 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1587)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 7462)
+
+
+Started GET "/" for ::1 at 2020-07-28 16:39:16 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:8
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1841)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.3ms | Allocations: 8631)
+
+
+Started POST "/posts" for ::1 at 2020-07-28 16:39:24 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"zu7OTfPCO67nWuLPP6IypGLT8HduiPu+YTLCgrwKRx7JIDloKs9L6lt+0CM7O72N5SYfiDo8EONMlCVlbSbucg==", "content"=>"酒精"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `checked`, `created_at`, `updated_at`) VALUES ('酒精', FALSE, '2020-07-28 07:39:24.006994', '2020-07-28 07:39:24.006994')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 2887)
+
+
+Started POST "/posts" for ::1 at 2020-07-28 16:39:29 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"zu7OTfPCO67nWuLPP6IypGLT8HduiPu+YTLCgrwKRx7JIDloKs9L6lt+0CM7O72N5SYfiDo8EONMlCVlbSbucg==", "content"=>"もう一回位"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `checked`, `created_at`, `updated_at`) VALUES ('もう一回位', FALSE, '2020-07-28 07:39:29.554788', '2020-07-28 07:39:29.554788')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Completed 200 OK in 30ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 2892)
+
+
